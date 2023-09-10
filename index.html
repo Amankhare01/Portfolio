@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aman khare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Aman khare</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Project's</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi , I'am <span><br>Aman</span> kharwar</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>I am a 3rd Year Undergraduate student at SRIMT Lucknow pursuing a
+                        Bachelor of Technology majoring in Computer Science and Engineering.
+                        So far, in my experience at SRIMT, I have learned various Computer
+                        Science fundamentals and practical interpersonal skills like teamwork,
+                        networking, and leadership.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web development<br></span>Web app developer</li>
+                            <li><span>React<br></span>Web development</li>
+                            <li><span>Java(Basic)<br></span></li>
+                            <li><span>Python<br></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Freasher<br></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B-tech<br></span>Currently pursuing with CSE in SRIMT Lucknow (2020 - 2024)</li>
+                            <li><span>Intermediate<br></span>2018 - 2020 <br>Janta Inter College (Ballia)</li>
+                            <li><span>Highschool<br></span>2016 - 2018 <br>Om Inter College (Ballia)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <h1>Web developer</h1>
+                    <p>A successful website does three things: It attracts the right kinds of visitors. Guides them to
+                        the main services or product you offer.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <h1>Canvas</h1>
+                    <p>Crafting Digital Masterpieces, One Line of Code at a Time 🚀</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <h1>Photo Editing</h1>
+                    <p>Transforming Pixels into Artistry 📸✨</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work (1).png" alt="">
+                    <div class="layer">
+                        <h2>News Website</h2>
+                        <p>This website is provide the recent news of Every state of india in sevral Category Like -Sport Technology Health Buisness general etc.</p>
+                        <a href="">More</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work (2).png" alt="">
+                    <div class="layer">
+                        <h2>My Local Shops</h2>
+                        <p>This is shoping site where local Shopkeepar can upload there product On this site and with the help of this site local people can search and go for purchase his product in his/her local Market.</p>
+                        <a href="">More</a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="" alt="">
+                    <div class="layer">
+                        <h2>News Website</h2>
+                        <p>This website is provide the recent news of Every state of india in sevral Category Like -Sport Technology Health Buisness general etc.</p>
+                        <a href="">More</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container d4">
+            <div class="form1">
+                <h1>Contact</h1>
+                <form action="exp.php" onsubmit="return valid()" method="post" name="submit-to-google-sheet">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="Name"><br>
+                <label for="phone">Mobile_no</label><br>
+                <input type="tel" id="phone" name="Mobile"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="Email"><br>
+                <label for="massage">Message</label><br>
+                <textarea name="Message" id="massage" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Send" name="submit"><br>
+            </form>
+            </div>
+        </div>
+        <div class="container d4">
+            <h1>Follow me </h1>
+            <a id="fb31" href="https://www.facebook.com/Aman.khare.980?mibextid=ZbWKwL" class="fa fa-facebook"> facebook</a><br>
+            <a id="fb31" href="https://www.linkedin.com/in/aman-kharwar-0a6843212" class="fa fa-linkedin"> Linkedin</a><br>
+            <a id="yt31" href="https://youtube.com/@amankharemedia" class="fa fa-youtube"> Youtube</a><br>
+            <a id="ig31" href="https://instagram.com/its_amankhare?igshid=ZDc4ODBmNjlmNQ==" class="fa fa fa-instagram"> Instagram</a><br>
+            <button class="btn1"><a href="resume.pdf" download>Download Resume</a></button>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyEc8m38vQZAMoQkHQ0mmEjdrAi4f_VLgmTH932j0Xtf8TZeI-04jALWFRSO-6qM_YAxA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
