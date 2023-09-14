@@ -221,7 +221,13 @@ color: rgb(242, 255, 0);
 }
 
 /* res */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+    #header{
+    height: 50vh;
+    width: 100%;
+    opacity: 0.9;
+    background-image: url(pic2.png);
+    background-size: cover;
     body {
         font-size: 14px;
     }
