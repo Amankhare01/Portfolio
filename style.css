@@ -221,15 +221,23 @@ color: rgb(242, 255, 0);
 }
 
 /* res */
-@media (max-width: 640px) {
+@media (min-width:319px) and (max-width: 480px) {
+
+    *{
+       align-items: first baseline;
+       justify-content: left;
+       /* padding: 1px; */
+    }
     #header{
     height: 50vh;
-    width: 100%;
+    width: 50vh;
     opacity: 0.9;
     background-image: url(pic2.png);
     background-size: cover;
+    /* background-position: center; */
+}
     body {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     /* Adjust the header for smaller screens */
@@ -239,19 +247,21 @@ color: rgb(242, 255, 0);
 
     /* Adjust the navigation menu */
     nav ul {
-        flex-direction: column;
         text-align: center;
+
+    }
+    nav ul li{
+        padding: 5px;
+        margin: 5px;
     }
 
     /* Adjust header text */
     .header-text {
-        text-align: center;
+        text-align: left;
+        margin: 20px;
     }
 
     /* Adjust the about section */
-    .about-col-1 {
-        display: none;
-    }
 
     /* Adjust the tab contents */
     .tab-contents {
@@ -261,8 +271,12 @@ color: rgb(242, 255, 0);
     .tab-contents.active-tab {
         display: block;
     }
-
-    /* Adjust the services section */
+    .tab-title{
+        width: 240px;
+    }
+    .tab-title p{
+        margin: 5px;
+    }
     .services-list {
         flex-direction: column;
     }
@@ -270,5 +284,18 @@ color: rgb(242, 255, 0);
     /* Adjust the portfolio section */
     .work {
         flex-direction: column;
+    }
+    #about {
+        padding: 10px;
+        color: #dacece;
+    }
+    .d4 {
+        padding: 15px;
+        width: 50%;
+        float: right;
+        display: grid;
+    }
+    .container{
+        padding: 6px;
     }
 }
