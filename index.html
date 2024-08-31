@@ -116,7 +116,7 @@
                         <p>Developed a dynamic eCommerce platform using MERN stack, allowing users to browse, search, and 
                             purchase products. Implemented secure authentication, integrated payment gateways, and optimized 
                             for performance.</p>
-                        <a href="https://github.com/Amankhare01/MERN-Stack-Ecommerce-site">Visit</a>
+                        <a href="https://ecomf.vercel.app/">Visit</a>
                     </div>
                 </div>
                 <!-- <div class="work">
@@ -134,7 +134,8 @@
         <div class="container d4">
             <div class="form1">
                 <h1>Contact</h1>
-                <form action="exp.php" onsubmit="return valid()" method="post" name="submit-to-google-sheet">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="09caf8ee-f770-42db-98ca-60f90c2c7dd4">
                 <label for="name">Full Name</label><br>
                 <input type="text" id="name" name="Name"><br>
                 <label for="phone">Mobile_no</label><br>
@@ -143,8 +144,8 @@
                 <input type="email" id="email" name="Email"><br>
                 <label for="massage">Message</label><br>
                 <textarea name="Message" id="massage" cols="20" rows="10"></textarea><br>
-                <input type="submit" value="Send" name="submit"><br>
-            </form>
+                <button type="submit" value="submit">Send</button>
+                </form>
             </div>
         </div>
         <div class="container d4">
@@ -170,7 +171,7 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-    <script>
+    <!-- <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyEc8m38vQZAMoQkHQ0mmEjdrAi4f_VLgmTH932j0Xtf8TZeI-04jALWFRSO-6qM_YAxA/exec'
         const form = document.forms['submit-to-google-sheet']
       
@@ -180,7 +181,7 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+      </script> -->
 </body>
 
 </html>

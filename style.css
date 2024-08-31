@@ -220,13 +220,12 @@ color: rgb(242, 255, 0);
     color: #535151;
 }
 
-/* res */
+
 @media (min-width:319px) and (max-width: 480px) {
 
     *{
        align-items: first baseline;
        justify-content: left;
-       /* padding: 1px; */
     }
     #header{
     height: 50vh;
@@ -234,18 +233,16 @@ color: rgb(242, 255, 0);
     opacity: 0.9;
     background-image: url(pic2.png);
     background-size: cover;
-    /* background-position: center; */
+
 }
     body {
         font-size: 10px;
     }
 
-    /* Adjust the header for smaller screens */
     #header {
         text-align: center;
     }
 
-    /* Adjust the navigation menu */
     nav ul {
         text-align: center;
 
@@ -255,15 +252,11 @@ color: rgb(242, 255, 0);
         margin: 5px;
     }
 
-    /* Adjust header text */
     .header-text {
         text-align: left;
         margin: 20px;
     }
 
-    /* Adjust the about section */
-
-    /* Adjust the tab contents */
     .tab-contents {
         display: none;
     }
@@ -281,7 +274,6 @@ color: rgb(242, 255, 0);
         flex-direction: column;
     }
 
-    /* Adjust the portfolio section */
     .work {
         flex-direction: column;
     }
