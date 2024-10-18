@@ -188,6 +188,10 @@ color: rgb(242, 255, 0);
     color: blue;
     font-weight: bold;
 }
+#fb32:hover{
+    color: blue;
+    font-weight: bold;
+}
 #yt31:hover{
     color: rgba(255, 0, 0, 0.922);
     font-weight: bold;
